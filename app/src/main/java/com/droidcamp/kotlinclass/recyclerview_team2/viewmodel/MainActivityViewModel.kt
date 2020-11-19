@@ -1,4 +1,4 @@
-package com.droidcamp.kotlinclass.recyclerview_team2
+package com.droidcamp.kotlinclass.recyclerview_team2.viewmodel
 
 import androidx.lifecycle.ViewModel
 
