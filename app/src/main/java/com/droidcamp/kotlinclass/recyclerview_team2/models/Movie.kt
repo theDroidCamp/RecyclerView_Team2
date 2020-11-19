@@ -1,9 +1,17 @@
 package com.droidcamp.kotlinclass.recyclerview_team2.models
 
+import com.google.gson.annotations.SerializedName
+
+
+
 data class Movie(
 
-    val id: Int,
-    val image: String,
-    val title: String,
-    val rating: String
+    @SerializedName("image")
+    var imageUrl: String? = null,
+
+    @SerializedName("rating")
+    var movieRating: Double? = null,
+
+    @SerializedName("title")
+    var movieTitle: String? = null
 )
