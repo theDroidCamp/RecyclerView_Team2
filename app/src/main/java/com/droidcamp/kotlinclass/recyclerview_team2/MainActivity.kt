@@ -45,10 +45,16 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun displayMovies(movies: List<Movie>) {
+
         mRecyclerView = binding.recyclerview
-        mRecyclerView.layoutManager = LinearLayoutManager(this)
-        mAdapter = MovieAdapter(movies)
-        mRecyclerView.adapter = mAdapter
+        mRecyclerView.apply {
+            layoutManager = LinearLayoutManager(this@MainActivity)
+            mAdapter = MovieAdapter(movies)
+            adapter = mAdapter
+        }
+//        mRecyclerView.layoutManager = LinearLayoutManager(this)
+//        mAdapter = MovieAdapter(movies)
+//        mRecyclerView.adapter = mAdapter
 
     }
 }
