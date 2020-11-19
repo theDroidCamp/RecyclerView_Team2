@@ -6,7 +6,6 @@ import com.google.gson.annotations.SerializedName
 
 data class Movie(
 
-
     @SerializedName("image")
     var imageUrl: String? = null,
 
@@ -15,10 +14,4 @@ data class Movie(
 
     @SerializedName("title")
     var movieTitle: String? = null
-
-//    val image: String,
-//    val title: String,
-//    val rating: Double
 )
-
-
